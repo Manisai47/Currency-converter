@@ -29,4 +29,12 @@ function convert(){
  	}else{
  		alert("Please select two different currencies")
  	}
+	
+    // ✅ ENTER KEY SUPPORT
+    document.getElementById("topic").addEventListener("keydown", function(event) {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            convert();
+        }
+    });
 }
